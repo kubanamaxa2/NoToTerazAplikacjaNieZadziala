@@ -142,7 +142,51 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this@MainActivity, "Wzorzec ma być krótrzy od tekstu bo nie", Toast.LENGTH_LONG).show()
                 }
                 else{
+                    val majtki = strGenerator(powtu.toString().toInt())
+                    var Start: Long = 0
+                    var Stop: Long = 1
+                    var CzasTotal: Long = 0
+                    var x = 0
+                    Start = System.currentTimeMillis()
+                    while (x < dlugi.toString().toInt()) {
+                        bruteForce(majtki, wzor.toString())
+                        x++
+                    }
+                    Stop = System.currentTimeMillis()
+                    CzasTotal = Stop-Start
+                    CoZaBrutal.text = "Bruteforce: " + CzasTotal.toString() + "ms"
 
+                    x = 0
+                    Start = System.currentTimeMillis()
+                    while (x < dlugi.toString().toInt()) {
+                        KMP(majtki, wzor.toString())
+                        x++
+                    }
+                    Stop = System.currentTimeMillis()
+                    CzasTotal = Stop-Start
+                    JanKnot4.text = "Knutha-Morrisa-Patta: " + CzasTotal.toString() + "ms"
+
+                    x = 0
+                    Start = System.currentTimeMillis()
+                    while (x < dlugi.toString().toInt()) {
+                        BM(majtki, wzor.toString())
+                        x++
+                    }
+                    Stop = System.currentTimeMillis()
+                    CzasTotal = Stop-Start
+                    BajernMunish.text = "Boyera-Moorea: " + CzasTotal.toString() + "ms"
+
+                    x = 0
+                    Start = System.currentTimeMillis()
+                    while (x < dlugi.toString().toInt()) {
+                        RK(majtki, wzor.toString())
+                        x++
+                    }
+                    Stop = System.currentTimeMillis()
+                    CzasTotal = Stop-Start
+                    RabinKarp.text = "Rabina-Karpa: " + CzasTotal.toString() + "ms"
+
+                    Toast.makeText(this@MainActivity, "Skończone", Toast.LENGTH_SHORT).show()
                 }
             }
             else{
