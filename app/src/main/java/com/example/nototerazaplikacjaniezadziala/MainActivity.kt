@@ -2,6 +2,11 @@ package com.example.nototerazaplikacjaniezadziala
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
+import org.w3c.dom.Text
 import kotlin.math.pow
 import kotlin.random.Random
 
@@ -115,16 +120,35 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        fun strGenerator(ildan: Int): String {
+        fun strGenerator(powtorzenia: Int): String {
             val alphabet = "abcdefghijklmnopqrstuvwxyz"
-            val lancuch = (1..ildan)
+            val lancuch = (1..powtorzenia)
                 .map { alphabet[Random.nextInt(alphabet.length)] }
                 .joinToString("")
             return lancuch
         }
 
+        val CoZaBrutal = findViewById<TextView>(R.id.textViewBrutal)
+        val JanKnot4 = findViewById<TextView>(R.id.textViewJohnWick)
+        val BajernMunish = findViewById<TextView>(R.id.textViewBajern)
+        val RabinKarp = findViewById<TextView>(R.id.textViewKarp)
 
+        val powtu = findViewById<EditText>(R.id.editTextNumber).text
+        val dlugi = findViewById<EditText>(R.id.editTextNumber2).text
+        val wzor = findViewById<EditText>(R.id.editTextTextPersonName).text
+        findViewById<Button>(R.id.button).setOnClickListener {
+            if(powtu.toString() != "" && dlugi.toString() != "" && wzor.toString() != ""){
+                if(dlugi.toString().toInt()<wzor.length){
+                    Toast.makeText(this@MainActivity, "Wzorzec ma być krótrzy od tekstu bo nie", Toast.LENGTH_LONG).show()
+                }
+                else{
 
+                }
+            }
+            else{
+                Toast.makeText(this@MainActivity, "Uzupełnij wszystko bo tak mówie", Toast.LENGTH_LONG).show()
+            }
+        }
 
     }
 }
