@@ -7,18 +7,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewKarp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rabina Karpa: "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
-
-    <TextView
         android:id="@+id/textViewBrutal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,22 +14,22 @@
         android:textAlignment="gravity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713" />
+        app:layout_constraintVertical_bias="0.724" />
 
     <TextView
-        android:id="@+id/textViewBajern"
+        android:id="@+id/textViewKarp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Boyera-Moorea: "
+        android:text="Rabina Karpa: "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintVertical_bias="0.831" />
 
     <TextView
         android:id="@+id/textViewJohnWick"
@@ -50,24 +38,22 @@
         android:text="Knutha-Morrisa-Patta: "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintVertical_bias="0.762" />
 
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="225dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:hint="Wprowadź ilość powtórzeń"
-        android:inputType="number"
+    <TextView
+        android:id="@+id/textViewBajern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boyera-Moorea: "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintVertical_bias="0.797" />
 
     <Button
         android:id="@+id/button"
@@ -88,10 +74,24 @@
         android:text="Ile razy powtórzyć"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
+        app:layout_constraintVertical_bias="0.108" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Wprowadź ilość powtórzeń"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
 
     <TextView
         android:id="@+id/textView2"
